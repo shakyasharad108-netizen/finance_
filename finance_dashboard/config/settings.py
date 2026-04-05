@@ -8,6 +8,7 @@ separated into labeled sections for easy navigation.
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -72,10 +73,11 @@ TEMPLATES = [
 # ─── Database ─────────────────────────────────────────────────────────────────
 # SQLite for dev/demo; swap for PostgreSQL in production via env vars.
 
+
 DATABASES = {
     "default": dj_database_url.config(
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
-    }
+    )
 }
 # ─── Auth ─────────────────────────────────────────────────────────────────────
 
