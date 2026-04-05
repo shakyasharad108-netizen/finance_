@@ -73,13 +73,8 @@ TEMPLATES = [
 # SQLite for dev/demo; swap for PostgreSQL in production via env vars.
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'finance',
-        'USER': 'root',
-        'PASSWORD': 'Sharad@19',
-        'HOST': 'localhost',
-        'PORT': '3306',
+    "default": dj_database_url.config(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
     }
 }
 # ─── Auth ─────────────────────────────────────────────────────────────────────
