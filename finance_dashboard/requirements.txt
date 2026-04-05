@@ -1,9 +1,10 @@
 Django>=4.2
 djangorestframework
 djangorestframework-simplejwt
+django-filter
+django-cors-headers
 gunicorn
 whitenoise
 dj-database-url
 psycopg2-binary
 python-decouple
-django-cors-headers
