@@ -219,3 +219,15 @@ apps/
 | CORS          | django-cors-headers                 |
 | Config        | python-decouple                     |
 | Database      | SQLite (dev) / PostgreSQL (prod)    |
+
+
+## Live API
+https://finance-9v6v.onrender.com/api/docs/
+
+## Base URL
+https://finance-9v6v.onrender.com/
+
+## Example Endpoints
+- POST /api/v1/auth/login/
+- GET /api/v1/finance/
+- GET /api/v1/users/
